@@ -1,0 +1,25 @@
+paste in Header: 
+
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+Give a item / list item same clas of ".tabs_item" and then give sections a id and class of ".tab-content". after this pass an attribute to every tab_item "data-tab-id|id_of_the_content_section"  
+
+
+Also Pass an Attribute to section : style|display:none
+
+<script>
+$( document ).ready(function() {
+    console.log( "ready!" );
+	 jQuery('body').on('click', ".tabs_item", function () {
+            let tabid = jQuery(this).attr('data-tab-id');
+            jQuery('section.tab-content').fadeOut(300);
+            jQuery('section#' + tabid).delay(300).fadeIn(300);
+            console.log("tuyttyututy", tabid);
+      })
+});
+</script>
+
+
+
