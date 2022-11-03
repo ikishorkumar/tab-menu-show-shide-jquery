@@ -4,7 +4,7 @@ paste in Header:
 
 
 
-Give a item / list item same clas of ".tabs_item" and then give sections a id and class of ".tab-content". after this pass an attribute to every tab_item "data-tab-id|id_of_the_content_section"  
+Give a item / list item same clas of ".tabs_item" and then give sections a id and class of ".tab-content". after this pass an attribute to every tab_item "data-tab-id|id_of_the_content_section"  Note:(id_of_the_content_section will same as section you want to show on toggle)
 
 
 Also Pass an Attribute to section : style|display:none
